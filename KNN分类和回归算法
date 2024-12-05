@@ -15,7 +15,6 @@ data.drop_duplicates(inplace=True)
 print(data['label'].value_counts())
 data_regression = data.drop(['label'], axis=1)
 class KNN:
-    """使用Python语言实现K近邻算法的分类"""
     def __init__(self, k):
         """初始化方法
         :parameters
